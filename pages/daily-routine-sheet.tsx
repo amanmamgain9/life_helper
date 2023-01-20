@@ -4,7 +4,8 @@ import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 
 import NavbarComponent from '../components/navigation/NavbarComponent';
-const inter = Inter({ subsets: ['latin'] });
+import DaySheetComponent from '../components/DaySheetComponents/DaySheetComponent';
+const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
     return (
@@ -19,11 +20,12 @@ export default function Home() {
           <main className={styles.main}>
 
             <h1 className="text-3xl font-bold underline">
-              Hello world!
+              Hello world Chu!
             </h1>
             <button>
               Start Workout
             </button>
+            <DaySheetComponent/>
           </main>
         </>
     )
